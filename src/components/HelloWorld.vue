@@ -4,6 +4,7 @@
     <div v-custom="{ message: 'Hello from custom directive!' }">
       Click me to trigger the directive!
     </div>
+    <input type="text" v-autofocus>
   </div>
 </template>
 
