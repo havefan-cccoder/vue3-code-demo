@@ -1,10 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div v-custom="{ message: 'Hello from custom directive!' }">
+    <div v-alertValue="{ message: 'Hello from alertValue directive!' }">
       Click me to trigger the directive!
     </div>
-    <input type="text" v-autofocus>
+    <input type="text" v-autoFocus>
+    <img src="../assets/logo.png" alt="" srcset="" v-pinIt:warning.right.top="true">
   </div>
 </template>
 
