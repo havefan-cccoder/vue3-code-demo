@@ -6,6 +6,11 @@ import installDirectives from './directives'
 
 const routes = [
     { 
+        path: '/home',
+        component: ()=>import('../src/components/home-page.vue'),
+        name: 'home'
+    },
+    { 
         path: '/demoA',
         component: ()=>import('../src/components/demo-use-A.vue'),
         name: 'demoA'
@@ -14,12 +19,18 @@ const routes = [
         path: '/demoB',
         component: ()=>import('../src/components/demo-use-B.vue'),
         name: 'demoB'
+    },
+    { 
+        path: '/demoC',
+        component: ()=>import('../src/components/demo-use-C.vue'),
+        name: 'demoC'
     }
 ];
 
 const router = createRouter({
     history: createWebHashHistory(),
-    routes
+    routes,
+    redirect:'/home'//设置默认路由，作为默认展示的首页
 })
 
 // // 自定义全局指令函数

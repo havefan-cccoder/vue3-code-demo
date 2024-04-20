@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <!--这里的内容是显示到所有页面的公共部分，不需要就删掉。可以设置默认路由，选择某个vue文件作为默认展示的“首页”-->
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
   <div>
     <HomePage msg="Welcome to Your Vue.js App"/>
+  </div> -->
 
-    <!--Demo A-->
-    <router-link to="/demoA">Demo A: 自定义公共指令</router-link>
-
-    <br/>
-    <!--Demo B-->
-    <router-link to="/demoB">Demo B: 弹窗组件封装</router-link>
-  </div>
-
+  <!--home-page.vue里的router-link，最终呈现在这里-->
   <router-view></router-view>
 </template>
 
 <script>
-import HomePage from './components/home-page.vue'
+// import HomePage from './components/home-page.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    // HomePage
   }
 }
 </script>
