@@ -5,7 +5,7 @@
     <HomePage msg="Welcome to Your Vue.js App"/>
   </div> -->
 
-  <!--home-page.vue里的router-link，最终呈现在这里-->
+  <!--所有的的router-link，或者说配置的路由页面最终呈现在这里-->
   <router-view></router-view>
 </template>
 
