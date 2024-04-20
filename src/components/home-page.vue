@@ -1,17 +1,13 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <div v-alertValue="{ message: 'Hello from alertValue directive!' }">
-      Click me to trigger the directive!
-    </div>
-    <input type="text" v-autoFocus>
-    <img src="../assets/logo.png" alt="" srcset="" v-pinIt:warning.right.top="true">
+    
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   props: {
     msg: String
   }
