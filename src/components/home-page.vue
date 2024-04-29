@@ -7,6 +7,10 @@
     <br/>
     <!--Demo B-->
     <router-link to="/demoB">Demo B: 弹窗组件封装</router-link>
+
+    <br/>
+    <!--Demo C-->
+    <router-link to="/democ">Demo C:v-model的巧用</router-link>
   </div>
 </template>
 
