@@ -1,7 +1,7 @@
 <template>
   这是demo C
   <div>
-    <button @click="popShow = true">显示弹窗</button>
+    <button @click="() => {popShow = true}">显示弹窗</button>
   </div>
   <!--这里的v-model相当于给子组件传了一个名为modelValue的props-->
   <pop-up v-model="popShow">
@@ -9,8 +9,12 @@
     <div>我是一个内容</div>
   </pop-up>
 </template>
-
-<script>
+<script setup>
+import { ref } from 'vue'
+import popUp from './pop-up.vue'
+let popShow = ref(false);
+</script>
+<!-- <script>
 import popUp from './pop-up.vue'
 export default {
   name: 'demoC',
@@ -29,7 +33,7 @@ export default {
     // }
   }
 }
-</script>
+</script> -->
 
 <style>
 

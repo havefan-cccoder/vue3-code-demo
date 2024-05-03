@@ -7,7 +7,19 @@
   </div>
 </template>
 
-<script >
+<script setup>
+let emit = defineEmits(["update:modelValue"]);
+let { modelValue } = defineProps({
+  modelValue: {
+    type: Boolean,
+    default: false
+  }
+});
+function hidden() {
+  emit("update:modelValue", false);
+}
+</script>
+<!-- <script >
 export default {
     props: {
       // 这个props相当于省略了父组件的v-if和监听事件
@@ -23,7 +35,7 @@ export default {
       }
     }
 }
-</script>
+</script> -->
 
 <style>
 
